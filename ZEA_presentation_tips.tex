@@ -51,18 +51,49 @@ Thank you for chance to dig in this field.
 
 \paragraph{Problem of scaling}
 
-\paragraph{Input signal specifications}
-\paragraph{Limited bonding area and heat load}
 
+\paragraph{Limited bonding area and heat load}
+\paragraph{Input signal specifications}
 \paragraph{Chip interconnect}
 
-\paragraph{System overview}
+\paragraph{System overview} Digital. Memory. Bias DAC. RF DAC.
+\paragraph{Memory owerview}
+Advantages and disadvantages!!!
 \paragraph{Clock control}
-\paragraph{Why not SRAM}
+\paragraph{Why not SRAM} + SRAM diagram
 \paragraph{Bias generation}
 
+\paragraph{DAC design}
+\subparagraph{Capacitive DAC}
+\subparagraph{DAC considerations} Noise: Resistor=R+noise source  $ \overline{v_n^2} = 4k_BTR_{out}B  $ \hspace{2mm}
+$R_{out\_Kelvin}=2^{n-2}R_u$ \\
+Sample and hold: $\overline{v_n^2} = k_BT/C_{out}$
 
+
+The bandwidth is set in accordance with the filtering behaviour of the qubit.
 %\newpage
 
+
+\paragraph{DAC pictures}
+Area consumption of the different components of the
+control electronics (labeled as in Fig. 3) for different values of
+the resolution of the bias signal (a) and of the RF signal (b).
+In panel a) the RF resolution is assumed to be 10 bits, while
+in panel b) the bias resolution is fixed to 12 bits.
+Comparison of DACs with component dimensions
+ $R_{u,Ladder} = 150R$
+a) Area consumption of the different DAC architectures for
+different resolutions, independent of operating conditions b)
+Power consumption of the DAC architecture, under the op-
+erating condition of the bias generation unit ($V_{range} = 1 V$
+and $f_{refresh} = 1.11 MHz$). c) Same as in b), but now con-
+sidering the operating conditions of the RF generation unit
+($V_{range} = 4 mV$ and $f_{refresh} = = 300 MHz$).
+
+\paragraph{Similarities with my previous IC design experience}
+\begin{itemize}
+    \item Aim at precision circuit design
+    \item Restricted environment
+\end{itemize}
 
 \end{document}
